@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class PremiumModel : AppCompatActivity() {
 
-  var
+  var premium :Double = 0.0
 
     }
 
