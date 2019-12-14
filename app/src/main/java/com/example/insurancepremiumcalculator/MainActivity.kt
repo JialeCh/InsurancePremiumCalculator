@@ -24,12 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.Calculate).setOnClickListener {
             premiumModel.premium= calculation()
-            totalPremium.text = calculation().toString()
 
         }
-
-
         display()
+
+
         findViewById<Button>(R.id.Reset).setOnClickListener {
          AgeRange.setSelection(0)
             Gender.clearCheck()
@@ -38,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun display(){
-        totalPremium.text = calculation().toString()
+       totalPremium.text = premiumModel.premium.toString()
     }
    fun calculation():Double{
 
